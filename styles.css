@@ -479,10 +479,29 @@ a {
 }
 
 #portfolio .project-info h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   padding: 0;
   margin-top: 10px;
+}
+
+#portfolio .project-info .pill-container {
+  width: 100%;
+  text-align: left;
+}
+
+#portfolio .project-info .pill-container .pill {
+  display: inline-block;
+  margin-top: 12px;
+  margin-right: 5px;
+  padding: 3px 8px;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--clr-light);
+  background-color: transparent;
+  border: solid 1px var(--clr-accent);
+  border-radius: 12px;
+
 }
 
 #portfolio .project-info p {
