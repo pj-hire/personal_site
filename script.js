@@ -1,5 +1,6 @@
 let hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 let mobileMenu = document.querySelector('.header .nav-bar .nav-list ul');
+const menuItem = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 let header = document.querySelector('.header.container');
 let formName = document.getElementById('form-name');
 let formEmail = document.getElementById('form-email');
@@ -20,6 +21,13 @@ document.addEventListener('scroll', () => {
 		header.style.backgroundColor = 'rgba(31,30,30,0.24)';
     header.style.borderBottom ="none"
 	}
+});
+
+menuItem.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobileMenu.classList.toggle('active');
+	});
 });
 
 formBtn.addEventListener('click', () => {
