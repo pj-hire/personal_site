@@ -30,9 +30,16 @@ menuItem.forEach((item) => {
 	});
 });
 
+
+
 formBtn.addEventListener('click', () => {
-  console.log(formName.value);
-  console.log(formEmail.value);
-  console.log(formMessage.value);
-  alert('Your message has successfully been submitted');
+  formName.value = '';
+  formEmail.value = '';
+  formMessage.value = '';
 });
+
+// document.addEventListener("DOMContentLoaded", function(){
+//   formName.value = '';
+//   formEmail.value = '';
+//   formMessage.value = '';
+// });
