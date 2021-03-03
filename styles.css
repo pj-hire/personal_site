@@ -446,6 +446,7 @@ a {
   padding: 30px;
   flex-basis: 50%;
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -475,7 +476,7 @@ a {
 
 #portfolio .project-info .pill-container .pill {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 15px;
   margin-right: 5px;
   padding: 5px 10px;
   font-size: 1.3em;
@@ -537,7 +538,7 @@ a {
   z-index: 100;
   border: solid 1px white;
   border-radius: 5px;
-  padding: 7px 15px;
+  padding: 5px 10px;
   margin-right: 5px;
   color: var(--clr-light);
   background-color: rgba(71, 84, 97, .8);
@@ -647,10 +648,19 @@ a {
 }
 
 /* Media query - special circumstance for portfolio project link buttons in for extra small devices  */
+@media only screen and (min-width: 350px){
+  #portfolio .project-link-container a {
+    padding: 7px 15px;
+    font-size: 1.3em;
+  }
+}
 @media only screen and (min-width: 450px){
   #portfolio .project-link-container a {
     padding: 7px 15px;
     font-size: 1.4em;
+  }
+  #portfolio .project-info p {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 600px){
@@ -780,10 +790,6 @@ a {
     font-size: 2rem;
   }
 }
-
-
-
-
 
 
 /* Keyframes */

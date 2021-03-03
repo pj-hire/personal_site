@@ -2,10 +2,6 @@ let hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 let mobileMenu = document.querySelector('.header .nav-bar .nav-list ul');
 const menuItem = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 let header = document.querySelector('.header.container');
-let formName = document.getElementById('form-name');
-let formEmail = document.getElementById('form-email');
-let formMessage = document.getElementById('form-message');
-let formBtn = document.getElementById('form-btn');
 
 hamburger.addEventListener('click',() => {
   hamburger.classList.toggle('active');
@@ -31,15 +27,16 @@ menuItem.forEach((item) => {
 });
 
 
-
-formBtn.addEventListener('click', () => {
-  formName.value = '';
-  formEmail.value = '';
-  formMessage.value = '';
-});
-
-// document.addEventListener("DOMContentLoaded", function(){
-//   formName.value = '';
-//   formEmail.value = '';
-//   formMessage.value = '';
+// window.addEventListener("DOMContentLoaded", function() {
+//   let form = document.getElementById('my-form');
+//   let formName = document.getElementById('form-name');
+//   let formEmail = document.getElementById('form-email');
+//   let formMessage = document.getElementById('form-message');
+//   let formBtn = document.getElementById('form-btn');
+//
+//   function success() {
+//       formName.value = '';
+//       formEmail.value = '';
+//       formMessage.value = '';
+//     }
 // });
